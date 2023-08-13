@@ -29,7 +29,7 @@ public class Employee {
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@ManyToOne(cascade = CascadeType.ALL)
-	// Joins tables by pet_store_id
+
 	@JoinColumn(name = "pet_store_id")
 	private PetStore petStore;
 }
